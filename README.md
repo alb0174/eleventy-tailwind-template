@@ -2,7 +2,7 @@
 # TEST
 
 - [x] upgraded  Eleventy 2.0 Beta
-- [ ] 
+- [x] export directory: public
 - [ ] 
 
 
