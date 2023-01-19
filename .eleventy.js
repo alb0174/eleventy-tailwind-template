@@ -1,27 +1,30 @@
+
 const dayjs = require("dayjs");
 
-module.exports = function (config) {
+module.exports = function(eleventyConfig) {
   // Pass-through images
-  config.addPassthroughCopy("./_site/images");
+  eleventyConfig.addPassthroughCopy("./_site/images");
+  eleventyConfig.addPassthroughCopy("./_site/js");
 
   // Add Date filters
-  config.addFilter("date", (dateObj) => {
+  eleventyConfig.addFilter("date", (dateObj) => {
     return dayjs(dateObj).format("MMMM D, YYYY");
   });
 
-  config.addFilter("sitemapDate", (dateObj) => {
+  eleventyConfig.addFilter("sitemapDate", (dateObj) => {
     return dayjs(dateObj).toISOString();
   });
 
-  config.addFilter("year", () => {
+  eleventyConfig.addFilter("year", () => {
     return dayjs().format("YYYY");
   });
 
   // Add pages collection
-  config.addCollection("pages", function (collections) {
+  eleventyConfig.addCollection("pages", function (collections) {
     return collections.getFilteredByTag("page").sort(function (a, b) {
       return a.data.order - b.data.order;
     });
+    
   });
 
   return {
@@ -31,7 +34,7 @@ module.exports = function (config) {
       data: "_data",
       includes: "_includes",
       layouts: "_layouts",
-      output: "dist",
+      output: "public",
     },
   };
 };

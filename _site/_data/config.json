@@ -1,9 +1,9 @@
 {
-  "siteTitle": "My Eleventy Site with Tailwind CSS",
-  "url": "https://example.com",
-  "description": "This is a default template for Eleventy with TailwindCSS",
+  "siteTitle": "Alb0174 Tail 11ty Test",
+  "url": "",
+  "description": "Questa è una prova",
   "keywords": "eleventy, 11ty, tailwind, tailwindcss, css, ssg",
   "image": "https://www.11ty.dev/img/built/IdthKOzqFA-350.avif",
-  "twitter": "@jeremy_daly",
+  "twitter": "@albertoesse",
   "card": "summary"
 }
