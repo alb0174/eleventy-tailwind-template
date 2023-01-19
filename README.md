@@ -9,7 +9,7 @@
 
 ### LAYOUT STRUCTURE
 
-- [x]layout base 
+- [x] layout base 
     - [ ] home
     - [ [ wide
     - [ ] blog
