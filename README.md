@@ -1,11 +1,19 @@
 
-# TEST
+# TEST 
+
+### UPGRADE
 
 - [x] upgraded  Eleventy 2.0 Beta
 - [x] export directory: public
 - [ ] 
 
+### LAYOUT STRUCTURE
 
+- [x]layout base 
+    - [ ] home
+    - [ [ wide
+    - [ ] blog
+    - [ ] post
 
 # Starter template for building Eleventy static sites with Tailwind CSS
 
